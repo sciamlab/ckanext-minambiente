@@ -1,0 +1,11 @@
+setup.py
+ckanext/__init__.py
+ckanext/minambiente/__init__.py
+ckanext/minambiente/plugin.py
+ckanext_minambiente.egg-info/PKG-INFO
+ckanext_minambiente.egg-info/SOURCES.txt
+ckanext_minambiente.egg-info/dependency_links.txt
+ckanext_minambiente.egg-info/entry_points.txt
+ckanext_minambiente.egg-info/namespace_packages.txt
+ckanext_minambiente.egg-info/not-zip-safe
+ckanext_minambiente.egg-info/top_level.txt

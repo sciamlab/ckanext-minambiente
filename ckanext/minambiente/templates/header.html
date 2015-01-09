@@ -1,0 +1,53 @@
+{% set current_url = request.environ.CKAN_CURRENT_URL %}
+{% set current_lang = request.environ.CKAN_LANG %}
+{% block header_wrapper %}
+{% block header_account %}
+{% endblock %}
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Salta al contenuto principale</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu">
+
+<div class="section clearfix">
+
+          <a id="logo" rel="home" title="Home" href="/">
+        <img alt="Home" src="http://www.dati.gov.it/sites/default/files/logo_trasp.png">
+      </a>
+    
+          <div id="name-and-slogan">
+
+                              <h1 id="site-name">
+              <a rel="home" title="Home" href="/"><span>dati.gov.it</span></a>
+            </h1>
+                  
+                  <div id="site-slogan">
+            I dati aperti della PA          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+      <div class="region region-header">
+    <div class="block block-block" id="block-block-10">
+
+    <h2 class="element-invisible">logo governo</h2>
+  
+  <div class="content">
+    <p><a href="http://www.funzionepubblica.gov.it/"><img title="Vai al sito del Ministero per la pubblica amministrazione e la semplificazione (link esterno)" src="http://www.dati.gov.it/sites/all/themes/datigovit/images/logo_governo_italiano.png" alt="Logo del Ministero per la pubblica amministrazione  e la semplificazione"></a></p>
+  </div>
+</div>
+  </div>
+                <div class="navigation" id="main-menu">        <h2 class="element-invisible">Menu principale</h2><ul class="links clearfix" id="main-menu-links"><li class="menu-246 first active"><a class="active" title="Home Page di dati.gov.it: I dati aperti della PA" href="/">Home</a></li>
+<li class="menu-1317"><a title="" href="/catalog/dataset">Dati</a></li>
+<li class="menu-752"><a title="Voglio capire di più: come e perché fare open data" href="/content/voglio-capire">Voglio capire</a></li>
+<li class="menu-757"><a title="Le applicazioni già disponibili per accedere ai servizi della PA da uno smartphone" href="/cerca/type/applicazione?solrsort=ds_created%20desc">Applicazioni</a></li>
+<li class="menu-753"><a title="Condivido un dataset: segnalo un insieme di dati della P.A." href="/content/condivido-i-miei-dati-aperti">Condivido dati</a></li>
+<li class="menu-1318"><a title="" href="/node/add/applicazione">Condivido applicazioni</a></li>
+<li class="menu-755 last"><a title="Le notizie di dati.gov.it" href="/notizie_pi%C3%B9_recenti">Notizie</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div>
+
+  </div> <!-- /.section, /#header -->
+{% endblock %}

@@ -1,0 +1,6 @@
+
+        [ckan.plugins]
+        # Add plugins here, e.g.
+        # myplugin=ckanext.minambiente.plugin:PluginClass
+        minambiente = ckanext.minambiente.plugin:MinAmbientePlugin	
+    
