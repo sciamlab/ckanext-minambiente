@@ -18,6 +18,7 @@
 #main-content {
 	float: right;
 	margin-right: 42px;
+	width: 953px;
 }
 .element-invisible { position: absolute ! important; clip: rect(1px, 1px, 1px, 1px); }
 .element-invisible.element-focusable:active, .element-invisible.element-focusable:focus { position: static ! important; clip: auto; }
