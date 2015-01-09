@@ -1,5 +1,24 @@
 /* ::::: http://89.97.56.42/modules/system/system.base.css?nb9m4n ::::: */
 .wrapper{border-top: none;}
+.container{width: 1280px;}
+#sidebar-first{width: 266px;margin-left:18px;}
+.toolbar{
+	background-color: white;
+	padding-bottom: 16px;
+	padding-top: 15px;
+	margin-bottom: 0;
+	padding-left: 10px;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+[role=main] .primary {
+	width: 731px;
+	float: right;
+}
+#main-content {
+	float: right;
+	margin-right: 42px;
+}
 .element-invisible { position: absolute ! important; clip: rect(1px, 1px, 1px, 1px); }
 .element-invisible.element-focusable:active, .element-invisible.element-focusable:focus { position: static ! important; clip: auto; }
 .clearfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
@@ -93,13 +112,20 @@ ul.quicktabs-tabs li a:focus { outline: medium none; }
 .panels-flexible-row-8-8-inside { padding-right: 0px; }
 
 html, body, #page { height: 100%; background:#ffffff;}
-#page-wrapper { min-height: 100%; min-width: 960px; }
-#header div.section, #featured div.section, #messages div.section, #main, #triptych, #footer-columns, #footer { width: 960px; margin-left: auto; margin-right: auto; }
-#header div.section { position: relative; }
+#page-wrapper { min-height: 100%; min-width: 1280px; }
+#header div.section, #featured div.section, #messages div.section, #main, #triptych, #footer-columns, #footer { 
+	width: 1280px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 46px;
+}
+#header-bar{
+	background: url("/catalog/img/barra_head.jpg") repeat-x top center;
+}
 #sidebar-first, #sidebar-second, .region-triptych-first, .region-triptych-middle, .region-triptych-last, .region-footer-firstcolumn, .region-footer-secondcolumn, .region-footer-thirdcolumn, .region-footer-fourthcolumn { display: inline; float: left; position: relative; }
-.no-sidebars #content { width: 960px; float: none; }
+.no-sidebars #content { width: 1280px; float: none; }
 #main-wrapper { min-height: 300px; }
-#content .section, .sidebar .section { padding: 0px 15px; }
+#content .section, .sidebar .section { padding: 15px 20px; }
 #footer-wrapper { padding: 35px 5px 30px; }
 .region-footer-firstcolumn, .region-footer-secondcolumn, .region-footer-thirdcolumn, .region-footer-fourthcolumn { padding: 0px 10px; width: 220px; }
 
@@ -120,7 +146,7 @@ ul.menu li { margin: 0px; }
 #skip-link { left: 50%; margin-left: -5.25em; margin-top: 0px; position: absolute; width: auto; z-index: 50; }
 #skip-link a, #skip-link a:link, #skip-link a:visited { background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); display: block; font-size: 0.94em; line-height: 1.7; padding: 1px 10px 2px; text-decoration: none; border-radius: 0px 0px 10px 10px; }
 #skip-link a:hover, #skip-link a:active, #skip-link a:focus { outline: 0px none; }
-#logo { float: left; padding: 15px 15px 15px 10px; }
+#logo{float: right;margin-right: 42px;}
 #name-and-slogan { float: left; padding-top: 34px; margin: 0px 0px 30px 15px; }
 #site-name { font-size: 1.821em; color: rgb(104, 104, 104); line-height: 1; }
 h1#site-name { margin: 0px; }
@@ -138,32 +164,23 @@ h1#site-name { margin: 0px; }
 .region-header .block{margin: 0 10px;}
 #content h2 { margin-bottom: 2px; font-size: 1.429em; line-height: 1.4; }
 ul.links { color: rgb(104, 105, 107); font-size: 0.821em; }
-#footer-wrapper { color: rgba(255, 255, 255, 0.65); font-size: 0.857em; }
-#footer-wrapper a { color: rgba(255, 255, 255, 0.8); }
-#footer-wrapper a:hover, #footer-wrapper a:focus { color: rgba(255, 255, 255, 0.95); text-decoration: underline; }
-#footer-wrapper .block { margin: 20px 0px; border: 1px solid rgba(255, 255, 255, 0.1); padding: 10px; }
-#footer-columns .block-menu, #footer .block { margin: 0px; padding: 0px; border: medium none; }
-#footer-columns h2 { border-bottom: 1px solid rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.15); font-size: 1em; margin-bottom: 0px; padding-bottom: 3px; text-transform: uppercase; }
-#footer-columns .content { margin-top: 0px; }
-#footer-columns .content ul { list-style: none outside none; padding-left: 0px; margin-left: 0px; }
-#footer-columns .content li { list-style: none outside none; margin: 0px; padding: 0px; }
-#footer-columns .content li a { display: block; border-bottom: 1px solid rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.15); line-height: 1.2; padding: 0.8em 2px 0.8em 20px; text-indent: -15px; }
-#footer-columns .content li a:hover, #footer-columns .content li a:focus { background-color: rgba(255, 255, 255, 0.05); text-decoration: none; }
 .tabs { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; margin-bottom: 20px; }
 
 body, body.overlay { color: rgb(0, 0, 0); }
 #page, #main-wrapper, #main-menu-links li a.active, #main-menu-links li.active-trail a { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
-#header { width: 960px; margin: 5px auto auto; background-image: url('http://www.dati.gov.it/sites/all/themes/datigovit/images/gradient.png'); background-repeat: repeat-x; }
-a { color: rgb(149,55,53); }
+a { color: #000; }
 a:hover, a:focus { color: rgb(149,55,53); }
 a:active { color: rgb(149,55,53); }
-#page-wrapper, #footer-wrapper { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+#page-wrapper { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
 .region-header, .region-header a, .region-header li a.active, #name-and-slogan, #name-and-slogan a, #secondary-menu-links li a { color: rgb(0, 0, 0); }
 
 body { font-family: Lato,arial,verdana,tahoma; }
-#header { width: 960px; margin: 5px auto auto; }
+#header { 
+	width: 1280px; 
+	margin-left: auto;
+	margin-right:  auto; 
+}
 #name-and-slogan { margin: 0px; }
-#logo { padding: 5px; }
 .region-header {float: right;}
 #main-menu-links { margin: 0px; padding: 0px; padding-bottom: 10px;}
 #main-menu-links li { background-image: url('../img/separa_menu.png'); background-position: right center; background-repeat: no-repeat; }
@@ -196,17 +213,12 @@ div.clearer { clear: left; }
 #content .content .field { margin: 0px; }
 #content .content p { margin: 0px; }
 #content .content .field-items, #content .content ul { font-size: 14px; }
-#footer-wrapper { color: black; background-color: white; padding: 0px; }
-#footer-wrapper a { color: black; text-decoration: none; }
-#footer-wrapper a:hover, #footer-wrapper a:focus { text-decoration: underline; }
-#footer-wrapper .block { margin: 20px 0px; border: 1px solid rgba(255, 255, 255, 0.1); padding: 10px; }
-#footer-columns .block-menu, #footer .block { margin: 0px; padding: 0px; border: medium none; }
-#footer-columns h2 { font-weight: bold; font-size: 13px; margin-bottom: 0px; text-transform: capitalize; }
-#footer-columns .content { margin-top: 0px; }
+#footer-wrapper { background-color: #0B456A; color: #fff; padding: 0px; }
+#footer-wrapper .content li a:hover { background-color: rgba(255, 255, 255, 0.05); text-decoration: none; }
+#footer-wrapper .content li a { color: #fff }
 #footer-columns .content ul { list-style: none outside none; padding-left: 0px; margin-left: 0px; }
 #footer-columns .content li { list-style: none outside none; margin: 0px; padding: 0px; }
 #footer-columns .content li a { display: block; font-size: 12px; padding: 0px; text-indent: 0px; line-height: 20px; }
-#footer-columns .content li a:hover, #footer-columns .content li a:focus { background-color: rgba(255, 255, 255, 0.05); text-decoration: none; color: rgb(0, 0, 0); }
 .block ul { margin: 0px; padding: 5px 0px 0.25em 1em; }
 .block ol, .block ul { margin: 0px; padding: 5px 0px 0.25em 1em; }
 .quicktabs-style-datagovit div.view-content { padding: 0px 20px; line-height: 14px; margin: 15px 0px; }

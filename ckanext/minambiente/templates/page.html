@@ -14,11 +14,11 @@
   {# The content block allows you to replace the content of the page if needed #}
   {%- block content %}
     {% block maintag %}<div role="main">{% endblock %}
-      <div id="content" class="container" style="width:1226px">
+      <div id="content" class="container">
 	{%block leftsidemenu %}
                 {% snippet 'snippets/leftside-menu.html' %}
         {% endblock %}
-	<div style="float:right">
+	     <div id="main-content">
         {% block main_content %}
           {% block flash %}
             {% set flash_messages = h.flash.pop_messages() | list %}
