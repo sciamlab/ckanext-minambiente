@@ -529,6 +529,9 @@ li.views-row-last {
 	margin-top: 2.1px;
 	margin-left: 130px;
 }
+#block-menu-block-7 li.active{
+	font-weight: bold;
+}
 #block-menu-block-7 .linea {
 	background: none repeat scroll 0 0 #104769;
 	display: inline;
