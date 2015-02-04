@@ -29,7 +29,7 @@ Example:
           <a href="{{ url }}">
             {% if imgurl and not imgurl.startswith('http') %}
               <img src="{{ h.url_for_static('uploads/group/%s' % imgurl, qualified = True) }}" width="200" alt="{{ organization.name }}" />
-	    {% else %}
+            {% else %}
               <img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" width="200" alt="{{ organization.name }}" />
             {% endif %}
           </a>
