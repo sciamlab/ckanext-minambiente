@@ -178,9 +178,6 @@ html, body, #page { height: 100%; background:#ffffff;}
 	margin-bottom: 0;
 	padding-bottom: 5px;
 }
-#header-bar{
-	background: url("/catalog/img/barra_head.jpg") repeat-x top center;
-}
 #sidebar-first, #sidebar-second, .region-triptych-first, .region-triptych-middle, .region-triptych-last, 
 .region-footer-firstcolumn, .region-footer-secondcolumn, .region-footer-thirdcolumn, .region-footer-fourthcolumn,.region-footer-fifthcolumn { 
 	display: inline; 
@@ -270,11 +267,6 @@ a:active { color: rgb(149,55,53); }
 }
 
 body { font-family: Lato,arial,verdana,tahoma; }
-#header { 
-	width: 1280px; 
-	margin-left: auto;
-	margin-right:  auto; 
-}
 #name-and-slogan { margin: 0px; }
 #main-menu-links { margin: 0px; padding: 0px; padding-bottom: 10px;}
 #main-menu-links li { background-image: url('../img/separa_menu.png'); background-position: right center; background-repeat: no-repeat; }
@@ -345,8 +337,20 @@ border-radius: 0px;
   width: 960px;
 }
 .dataset-map-expanded #dataset-map {
-  width: 938px ! important;
-  padding-bottom: 10px !important;
+  width: 951px ! important;
+  /*padding-bottom: 10px !important;*/
+}
+.dataset-map-expanded .wrapper {
+	margin-top: 396px;
+}
+.dataset-map-expanded #dataset-map {
+	height: 396px !important;
+	top: -396px !important;
+}
+#map-refresh {
+	margin-top: 7px;
+	color: #000 !important;
+	text-decoration: none !important;
 }
 .region-header {
 	float: right;
@@ -502,10 +506,32 @@ li.views-row-last {
 	background-position:center top;
 	text-decoration:none;
 }
+#header { 
+	width: 1280px; 
+	margin-left: auto;
+	margin-right:  auto; 
+	height: 137px
+}
+#header-bar{
+	background: url("/catalog/img/barra_head.jpg") repeat-x top center;
+	height: 169px;
+	margin-top: 46px;
+}
+#header-wrapper{
+	height: 100%;
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
 #head-aree {
-	margin-top: -169px;
+	background: url("/catalog/img/head.jpg") no-repeat scroll 0 0 transparent;
+	padding-bottom: 12px;
+	height: 157px;
+	margin-left: 285px;
+	margin-top: 0px;
 	position: absolute;
-	margin-left: 584px;
+	width: 954px;
+	z-index: 2;
 }
 #block-menu-menu-argomenti{
 	margin-top: 28px;
