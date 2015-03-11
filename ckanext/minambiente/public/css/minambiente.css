@@ -9,6 +9,10 @@
 	border-left: 1px solid #cccccc;
 	border-right: 1px solid #cccccc;
 }
+.format-label[data-format=wms], .format-label[data-format*=wms] {
+	background-position: 0 0;
+	background-image: url("/catalog/img/icon-wms.png");
+}
 .toolbar .breadcrumb {
 	margin: 1px 0 0 18px;
 	padding: 0px 7px 9px 0;

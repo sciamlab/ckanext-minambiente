@@ -22,13 +22,13 @@
         {% block main_content %}
           {% block flash %}
             {% set flash_messages = h.flash.pop_messages() | list %}
-            <div class="flash-messages">
+            <!-- div class="flash-messages">
               {% for message in flash_messages %}
                 <div class="alert fade in {{ message.category }}">
                   {{ h.literal(message) }}
                 </div>
               {% endfor %}
-            </div>
+            </div -->
           {% endblock %}
 
           {% block toolbar %}
