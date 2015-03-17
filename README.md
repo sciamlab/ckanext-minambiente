@@ -10,8 +10,8 @@ License
 -------
 Licensed under the GNU Affero General Public License (AGPL) v3.0
 
-    dati.gov.it CKAN plugin
-    Copyright (C) 2014 by Sciamlab s.r.l.
+    dati.minambiente.it CKAN plugin
+    Copyright (C) 2015 by Sciamlab s.r.l.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
