@@ -55,7 +55,7 @@
           {% block resource_read_title %}<h1 class="page-heading">{{ _(h.resource_display_name(res)) | truncate(50) }}</h1>{% endblock %}
           {% block resource_read_url %}
             {% if res.url %}
-              <p class="muted ellipsis">{{ _('URL:') }} <a href="{{ res.url }}" title="{{ res.url }}">{{ res.url }}</a></p>
+              <p class="muted ellipsis">{{ _('URL:') }} <a id="res-url" href="{{ res.url }}" title="{{ res.url }}">{{ res.url }}</a></p>
             {% endif %}
           {% endblock %}
           <div class="prose notes" property="rdfs:label">
@@ -71,7 +71,25 @@
         </div>
       </div>
       {% block data_preview %}
-        {{ h.resource_preview(c.resource, c.package) }}
+	{% if  res.format|lower == 'wms' %}
+	<div class="module-content ckanext-datapreview">
+		<iframe id="wms-iframe" style="width: 100%;height: 432px;" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<script type="text/javascript">
+		var base_url = 'http://www.pcn.minambiente.it/geoportal/catalog/livedata/embed.jsp';
+		document.getElementById('wms-iframe').src = base_url+'?url='+parent.parent.document.getElementById('res-url').href;
+	</script>
+	{% elif res.format|lower in ['pdf','docx','xlsx','doc'] %}
+        <div class="module-content ckanext-datapreview">
+                <iframe id="gdocs-iframe" style="width: 100%;height: 432px;" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <script type="text/javascript">
+                var base_url = 'https://docs.google.com/viewer';
+                document.getElementById('gdocs-iframe').src = base_url+'?embedded=true&url='+parent.parent.document.getElementById('res-url').href;
+        </script>
+	{% else %}
+	        {{ h.resource_preview(c.resource, c.package) }}
+	{% endif %}
       {% endblock %}
     </section>
   {% endblock %}

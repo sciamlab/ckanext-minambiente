@@ -76,7 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 
 ul.menu { border: medium none; list-style: none outside none; text-align: left; }
 ul.menu li { margin: 0px 0px 0px 0.5em; }
-ul li.leaf { list-style-image: url('menu-leaf.png'); list-style-type: square; }
+ul li.leaf { 
+/*list-style-image: url('menu-leaf.png'); 
+list-style-type: square; 
+*/}
 li.expanded, li.collapsed, li.leaf { padding: 0.2em 0.5em 0px 0px; margin: 0px; }
 li a.active { color: rgb(0, 0, 0); }
 /* ::::: http://89.97.56.42/modules/system/system.messages.css?nb9m4n ::::: */

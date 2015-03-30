@@ -1,0 +1,20 @@
+{% extends "dataviewer/base.html" %}
+
+{% block page %}
+    <!--div data-module="wmspreview" id="data-preview">
+        <h4 class="loading-dialog">
+          <div class="loading-spinner"></div>
+          <div class="left">{{ _('Loading...') }}</div>
+        </h4>
+    </div-->
+
+<iframe id="wms-iframe" style="width: 100%;height: 432px;" frameborder="0" scrolling="no"></iframe>
+<script type="text/javascript">
+var base_url = 'http://www.pcn.minambiente.it/geoportal/catalog/livedata/embed.jsp';
+document.getElementById('wms-iframe').src = base_url+'?url='+parent.parent.document.getElementById('res-url').href;
+</script>
+  {% resource 'ckanext-spatial/wms' %}
+
+{% endblock %}
+
+
