@@ -63,6 +63,8 @@ within_tertiary
                   <a href="{{ href }}" title="{{ label if label != label_truncated else '' }}">
 {% if name == 'res_format' %}
 	<span>{{ label_truncated.upper() }} {{ count }}</span>
+{% elif name == 'license_id' %}
+        <span>{{ item.name.upper() }} {{ count }}</span>
 {% else %}
 	<span>{{ label_truncated }} {{ count }}</span>
 {% endif %}                    

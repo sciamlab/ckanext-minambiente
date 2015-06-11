@@ -35,7 +35,7 @@ Example:
         {% elif package.get('state', '').startswith('deleted') %}
           <span class="label label-important">{{ _('Deleted') }}</span>
         {% endif %}
-        {{ h.popular('recent views', package.tracking_summary.recent, min=10) if package.tracking_summary }}
+        {{ h.popular('recent views', package.tracking_summary.recent, min=10) if package.tracking_summary }}<span class="label label-info">{{ package.tracking_summary.total }} visite</span>
       </h3>
       {% if banner %}
         <span class="banner">{{ _('Popular') }}</span>
